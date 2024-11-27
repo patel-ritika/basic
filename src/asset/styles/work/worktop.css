@@ -1,0 +1,18 @@
+.worktop-container {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: flex-start; /* Left align */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height */
+    padding-left: 20px; /* Add some space on the left */
+  }
+  
+  .worktop-heading {
+    color: #252422;
+    padding-left: 2rem;
+    margin-top: -2rem;
+    font-size: 6rem; /* Adjust font size */
+    line-height: 1; /* Adjust line height */
+    text-align: left; /* Ensure text aligns to the left */
+  }
+  
