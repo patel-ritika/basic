@@ -1,0 +1,167 @@
+/* Footer Container */
+.footer {
+    background-color: #252422;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-logo img {
+    padding-left: 5rem;
+    width: 80px; /* Adjust size */
+  }
+  
+  .footer-heading h1 {
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: left;
+    padding-right: 15rem;
+    margin: 0;
+  }
+  
+  /* Subscribe Section */
+  .footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .footer-dot {
+    font-size: 45px;
+    margin-right: 10px;
+  }
+  
+  .footer-stay {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footer-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .footer-input input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    outline: none;
+  }
+  
+  .footer-input input::placeholder {
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .input-arrow {
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Links Section */
+  .footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 90px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .footer-list {
+    flex: none;
+    margin-right: 65px;
+  }
+  
+  .footer-list h3 {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-list ul li {
+    text-align: left;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .footer-list ul li:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+    align-items: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    padding-right: 20rem;
+    width: 60px; /* Smaller logo size for mobile */
+  }
+
+  .footer-heading h1 {
+    font-size: 24px;
+    margin-top: 1rem;
+    line-height: 1.4;
+    padding-right: 0;
+  }
+
+  .footer-subscribe {
+    padding-right: 5rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-input {
+    justify-content: center;
+  }
+
+.footer-dot{
+  padding-right: 2rem;
+}
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 12rem;
+    gap: 20px;
+  }
+
+  .footer-list {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .footer-list ul li {
+    text-align: left;
+  }
+}

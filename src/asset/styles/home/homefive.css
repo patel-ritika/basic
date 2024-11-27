@@ -1,0 +1,99 @@
+.homefive-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252422;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .homefive-left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .homefive-left h1 {
+    color: #f9cdcd;
+    font-size: 5.5rem;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: -5rem;
+  }
+  
+  .homefive-left h3 {
+    padding-right: 25rem;
+    color: #f9cdcd;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .homefive_about-us-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #f9cdcd;
+    background-color: #252422;
+    border: 1px solid #f9cdcd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 35rem;
+  }
+  
+  .homefive_about-us-button:hover {
+    background-color: pink;
+    color: #252422;
+  }
+  
+  .homefive-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .homefive-right video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .homefive-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .homefive-right {
+      order: -1; /* Show the video first */
+      width: 100%; /* Ensure video spans full width */
+    }
+  
+    .homefive-right video {
+      width: 100%;
+      height: auto;
+    }
+  
+    .homefive-left {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .homefive-left h1 {
+      font-size: 2.5rem; /* Smaller font size for mobile */
+      margin: 10px 0;
+    }
+  
+    .homefive-left h3 {
+      padding-right: 10px; /* Align h3 to center */
+      font-size: 1.2rem;
+    }
+  
+    .homefive_about-us-button {
+      margin: 0 auto; /* Center the button */
+    }
+  }

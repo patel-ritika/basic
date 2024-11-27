@@ -1,0 +1,89 @@
+.homefour-container {
+    margin: 20px;
+  }
+  
+  .homefour_heading {
+    margin-top: 3rem;
+    padding-left: 40rem;
+    color: #252422;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .homefour_image-section {
+    margin-top: 5rem;
+    padding-left: 10rem;
+    display: flex;
+    gap: 150px;
+    padding-bottom: 20px;
+    margin-right: 50px;
+  }
+  
+  .homefour_image-box {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .homefour_image-box img {
+    width: 95%;
+    height: 100px;
+
+  }
+  
+  .homefour_image-box h4 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 65px;
+    color: #252422;
+  }
+  
+  .homefour_image-box p {
+    font-size: 14px;
+    color: #252422;
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+@media (max-width: 768px) {
+  .homefour_heading {
+      padding-left: 1rem;
+      font-size: 1.8rem; 
+  }
+
+  .homefour_image-section {
+      gap: 1rem;
+      flex-direction: column; 
+      padding-left: 0;
+  }
+
+  .homefour_image-box {
+      width: 100%; 
+  }
+
+  .homefour_image-box img {
+      height: 100px;
+      padding-right: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .homefour_heading {
+      font-size: 1.5rem; 
+  }
+
+  .homefour_image-box {
+      width: 100%;
+      text-align: center; 
+  }
+
+  .homefour_image-box h4 {
+      font-size: 1rem;
+      margin-top: -0.1rem;
+  }
+
+  .homefour_image-box p {
+      font-size: 0.8rem; 
+  }
+}
