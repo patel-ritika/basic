@@ -1,7 +1,7 @@
 /* General Container */
 .worksecond-container {
     background-color: #f4f4f4;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     font-family: Arial, sans-serif;
   }
@@ -16,7 +16,7 @@
   .worksecond_top-list {
     list-style: none;
     color: #252422;
-    padding-left: 10px;
+    padding-left: 45px;
     display: flex;
     gap: 15px;
   }
@@ -30,9 +30,11 @@
   }
   
   .worksecond_top-right p {
-    color: #252422;
+    color: darkslategray;
+    font-weight: 600;
     width: 100%;
-    padding-right: 3rem;
+    padding-right: 8rem;
+    text-align: left;
   }
   
   /* Horizontal Line */
@@ -50,11 +52,10 @@
   }
   
   .worksecond_left-content {
+    padding-left: 2rem;
     margin-top: 7rem;
     width: 30%;
   }
-  
- 
   
   .worksecond_left-content h1 {
     font-size: 30px;
@@ -89,6 +90,7 @@
   
   /* Center Content */
   .worksecond_center-content {
+    padding-right: 2rem;
     text-align: center;
     width: 40%;
   }
@@ -130,6 +132,7 @@
   
   /* Right Content */
   .worksecond_right-content {
+    padding-right: 2rem;
     text-align: right;
     width: 30%;
   }
@@ -165,6 +168,7 @@
     /* Horizontal Line */
     .worksecond_horizontal-line {
       margin: 15px 0;
+      width: 330px;
     }
   
     /* Middle Section */
@@ -203,7 +207,7 @@
     .worksecond_center-content img,
     .worksecond_right-content img {
       width: 90%;
-      margin-right: 1.2rem;
+      margin-left: 0.5rem;
       height: auto;
     }
   
@@ -212,7 +216,7 @@
     .worksecond_right-content h4,
     .worksecond_right-content p {
       text-align: left;
-      padding-left: 0;
+      padding-left: 20px;
     }
   }
   

@@ -1,0 +1,173 @@
+/* General Container */
+.workthird-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background-color: #f4f4f4;
+  }
+  
+  /* Left Section */
+  .workthird-left {
+    margin-top: 10rem;
+    padding-left: 1rem;
+    width: 30%;
+    text-align: left;
+  }
+  
+  .workthird-left h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #252422;
+  }
+  
+  .workthird-left p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: darkslategray;
+    font-weight: 600;
+  }
+  
+  .workthird-learn-more-btn {
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    color: #252422;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .workthird-learn-more-btn:hover {
+    background-color: #252422;
+    color: white;
+  }
+  
+  /* Center Section */
+  .workthird-center {
+    width: 35%;
+    text-align: center;
+  }
+  
+  .workthird-image  {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .workthird-image:hover {
+    transform: scale(0.95);
+  }
+  
+  .workthird-center h4 {
+    text-align: left;
+    padding-left: 2rem;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #252422;
+  }
+  
+.workthird-center h4:hover{
+  text-decoration: underline;
+}
+
+  .workthird-center p {
+    text-align: left;
+    padding-left: 2rem;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  /* Right Section */
+  .workthird-right {
+    padding-right: 1.5rem;
+    width: 35%;
+    text-align: center;
+  }
+  
+  .workthird-right h4 {
+    text-align: left;
+    padding-left: 2rem;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #252422;
+  }
+  
+.workthird-right h4:hover{
+  text-decoration: underline;
+}
+
+  .workthird-right p {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    padding-left: 2rem;
+    cursor: pointer;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  /* Images */
+  .workthird-image {
+    width: 450px;
+    height: 550px; /* Same height and width for all images */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+  }
+  
+  .workthird-image:hover {
+    transform: scale(0.9); /* Shrinks slightly on hover */
+  }
+  
+  /* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .workthird-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Centers the column content */
+  }
+
+  .workthird-left,
+  .workthird-center,
+  .workthird-right {
+    width: 100%; /* Full width for mobile */
+    text-align: left; /* Center text on mobile */
+    margin-top: 0;
+    padding: 0 10px; /* Add some padding */
+  }
+
+  .workthird-left h1 {
+    font-size: 24px; /* Adjust heading size for mobile */
+  }
+
+  .workthird-left p {
+    font-size: 14px; /* Adjust text size */
+  }
+
+  .workthird-learn-more-btn {
+    padding: 8px 16px; /* Adjust button size */
+    font-size: 14px;
+  }
+
+  .workthird-center h4,
+  .workthird-center p,
+  .workthird-right h4,
+  .workthird-right p {
+    text-align: left; /* Center align all text */
+    padding: 0; /* Remove padding on mobile */
+  }
+
+  .workthird-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Limit max size for smaller screens */
+  }
+}
