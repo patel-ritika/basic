@@ -1,0 +1,132 @@
+/* Container styling */
+.aboutphoto-container {
+    background-color: #252422;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center content vertically */
+    justify-content: space-between;
+    padding: 20px;
+    height: 1000px; /* Adjust height as needed */
+    color: #fff;
+  }
+  
+  /* Left content styling */
+  .aboutphoto-content {
+    flex: 1;
+  }
+  
+  .aboutphoto-content h6 {
+    padding-left: 5rem;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: #f9cdcd;
+    text-align: left;
+  }
+  
+  /* Image container styling */
+  .aboutphoto-images {
+    flex: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center images within this container */
+  }
+  
+  .aboutphoto_image-wrapper {
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .image {
+    display: block;
+    max-width: 400px; /* Increased size */
+    max-height: 500px; /* Increased size */
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Image positions */
+  .image-1 {
+    top: 10%; /* Adjusted for positioning */
+    left: 15%; /* Moved slightly right */
+    z-index: 3;
+  }
+
+  .image-2 {
+    top: 5%; /* Adjusted closer to the center */
+    left: 30%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+  }
+  
+  .image-3 {
+    top: 40%; /* Aligned vertically towards the center */
+    right: 10%;
+    z-index: 1;
+    transform: translate(50%, 50%);
+  }
+  
+  .image-4 {
+    bottom: 20%; /* Aligned closer to the center */
+    right: 15%;
+    z-index: 0;
+    transform: translate(30%, 30%);
+  }
+  
+  /* Hover effect */
+  .aboutphoto_image-wrapper:hover .image {
+    opacity: 1;
+    transform: scale(1.2); /* Slightly larger on hover */
+    z-index: 5; /* Bring the hovered image to the top */
+  }
+  
+  /* Specific hover adjustment for image-1 */
+  .image-1:hover {
+    left: 20%; /* Moves further right on hover to make it fully visible */
+  }
+  
+  /* Responsive styling */
+@media (max-width: 768px) {
+    .aboutphoto-container {
+      flex-direction: column; /* Stack content vertically */
+      height: auto; /* Adjust height */
+      padding: 10px;
+    }
+  
+    .aboutphoto-content {
+        padding-right: 5rem;
+      text-align: center; /* Center the text */
+      padding-left: 0; /* Remove left padding */
+      margin-bottom: 20px; /* Add spacing between text and images */
+    }
+  
+    .aboutphoto-images {
+      flex-direction: column; /* Align images vertically */
+      position: static; /* Reset positioning */
+      display: flex;
+      align-items: center;
+      width: 100%; /* Ensure images are stretched across the container */
+    }
+  
+    .aboutphoto_image-wrapper {
+      position: relative; /* Change back to relative for images */
+      margin-bottom: 15px; /* Add space between images */
+      display: flex;
+      justify-content: center; /* Center the image in the container */
+    }
+  
+    .image {
+      max-width: 200px; /* Scale down size for mobile */
+      max-height: 250px;
+      opacity: 1; /* Ensure images are visible */
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+  
+    /* Specific image adjustments */
+    .image-1, .image-2, .image-3, .image-4 {
+      opacity: 1; /* Make sure all images are visible */
+      transform: none; /* Remove any transformations */
+    }
+  }
+  
