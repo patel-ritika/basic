@@ -2,6 +2,7 @@ import React from 'react';
 import WorkTop from './work/WorkTop';
 import WorkSecond from './work/WorkSecond';
 import WorkThird from './work/WorkThird';
+import WorkFour from './work/WorkFour';
 
 const Work = () => {
   return (
@@ -9,6 +10,7 @@ const Work = () => {
       <WorkTop/>
       <WorkSecond/>
       <WorkThird/>
+      <WorkFour/>
     </div>
   );
 }
