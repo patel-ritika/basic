@@ -1,0 +1,151 @@
+/* General Container */
+.abouttop-container {
+    background-color: #252422; /* Background color */
+    color: #f9cdcd; /* Text color */
+    padding: 40px; /* Space around content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Left Section */
+  .abouttop-left {
+    text-align: left; /* Align text to the left */
+    margin-left: 20px; /* Space from the left edge */
+  }
+  
+  .abouttop-left h1 {
+    font-size: 80px; /* Font size for H1 */
+    line-height: 1.2; /* Space between lines */
+    margin: 0; /* Remove extra margin */
+  }
+  
+  /* Right Section */
+  .abouttop-right {
+    text-align: left; /* Align text to the left */
+    margin-top: -50px; /* Space from the left section */
+    margin-left: 50rem; /* Space from the left edge */
+  }
+  
+  .abouttop-right h1 {
+    font-size: 80px; /* Font size for the right H1 */
+    line-height: 1.2; /* Space between lines */
+    margin: 0; /* Remove extra margin */
+  }
+  
+  .abouttop-right h2 {
+    font-size: 30px; /* Font size for H2 */
+    line-height: 1.5; /* Space between lines */
+    color: #f9cdcd; /* Slightly lighter color */
+    margin-top: 20px; /* Space above H2 */
+  }
+  
+  /* Horizontal Line Section */
+  .abouttop-line {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* Spread items across */
+    align-items: center; /* Center items vertically */
+    margin-top: 40px; /* Space above the line */
+    margin-left: 20px; /* Left padding */
+    margin-right: 20px; /* Right padding */
+    border-top: 1px solid #f9cdcd; /* Horizontal line */
+    padding-top: 10px; /* Space above the line content */
+  }
+  
+  .line-left {
+    font-size: 16px; /* Font size for left text */
+    color: #f9cdcd; /* Text color */
+  }
+  
+  .line-center {
+    font-size: 16px; /* Font size for center text */
+    color: #f9cdcd; /* Text color */
+  }
+  
+  .line-dot {
+    font-size: 16px; /* Font size for dot */
+    color: #f9cdcd; /* Pink color for the dot */
+  }
+  
+ /* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .abouttop-left h1,
+    .abouttop-right h1 {
+      font-size: 40px; /* Reduce font size for headings */
+      line-height: 1.3; /* Adjust line height */
+    }
+  
+    .abouttop-right {
+      margin-left: 20px; /* Reduce left margin for smaller screens */
+      margin-top: 20px; /* Add margin above */
+    }
+  
+    .abouttop-right h2 {
+      font-size: 18px; /* Reduce font size for paragraph */
+      line-height: 1.4; /* Adjust line height */
+    }
+  
+    .abouttop-line {
+      flex-direction: row; /* Keep items in a row */
+      align-items: center; /* Align items vertically */
+      justify-content: space-between; /* Space out items */
+      margin-left: 10px; /* Reduce margin on smaller screens */
+      margin-right: 10px;
+      padding-top: 20px;
+    }
+  
+    .line-left {
+      font-size: 14px; /* Adjust text size for left text */
+      margin-right: auto; /* Push dot and center text to the right */
+    }
+  
+    .line-center {
+      font-size: 14px; /* Adjust text size for center text */
+      margin: 0 auto; /* Center the text */
+    }
+  
+    .line-dot {
+      font-size: 14px; /* Adjust text size for dot */
+      color: pink; /* Pink color for the dot */
+      margin-left: auto; /* Align the dot to the far right */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .abouttop-container {
+      padding: 20px; /* Reduce padding */
+    }
+  
+    .abouttop-left h1,
+    .abouttop-right h1 {
+      font-size: 30px; /* Further reduce font size */
+    }
+  
+    .abouttop-right h2 {
+      font-size: 16px; /* Reduce paragraph font size */
+    }
+  
+    .abouttop-line {
+      flex-direction: row; /* Keep items in a row */
+      justify-content: space-between; /* Spread items */
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  
+    .line-left {
+      font-size: 12px; /* Adjust text size for left text */
+      margin-right: auto; /* Push other elements to the right */
+    }
+  
+    .line-center {
+      font-size: 12px; /* Adjust text size for center text */
+      margin: 0 auto; /* Center the text */
+    }
+  
+    .line-dot {
+      font-size: 12px; /* Adjust text size for dot */
+      color: pink; /* Pink color for the dot */
+      margin-left: auto; /* Align the dot to the far right */
+    }
+  }
+  
