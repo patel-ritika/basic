@@ -50,7 +50,7 @@ const WorkFour = () => {
         CHICKEN.
       </p>
     </div>
-  </div>
+  </div>    
   );
 }
 
