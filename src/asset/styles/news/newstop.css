@@ -1,0 +1,57 @@
+.news-top-container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Adjust spacing as needed */
+    background-color: #f8f8f8; /* Optional: Background color */
+    border-bottom: 1px solid #ccc; /* Optional: Add border for separation */
+}
+
+.news-top-container h1 {
+    font-size: 100px; /* Size for "NEWS" */
+    color: #252422; /* Text color */
+    margin: 0;
+    padding-left: 3rem;
+}
+
+.news-dot {
+    font-size: 200px; /* Size for the dot */
+    color: #252422; /* Dot color */
+    line-height: 1;
+    padding-right: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .news-top-container {
+        flex-direction: row; 
+        text-align: center; /* Center-align text */
+        padding: 10px 20px; /* Reduce padding */
+    }
+
+    .news-top-container h1 {
+        font-size: 60px; /* Smaller font size for mobile */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .news-dot {
+        font-size: 100px; /* Smaller dot size for mobile */
+        padding-right: 0; /* Remove right padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-top-container {
+        margin-top: 1rem; /* Reduce top margin for very small screens */
+        padding: 10px 10px; /* Minimal padding */
+    }
+
+    .news-top-container h1 {
+        font-size: 40px; /* Further reduced font size */
+    }
+
+    .news-dot {
+        font-size: 80px; /* Further reduced dot size */
+    }
+}
