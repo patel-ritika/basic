@@ -1,0 +1,158 @@
+.aboutfour-container {
+    background-color: #252422;
+    color: #f9cdcd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* Capabilities Section */
+  .capabilities-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .aboutfour_left-section h1 {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  
+  .aboutfour_lists-section {
+    padding-left: 5rem;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .aboutfour_list {
+    flex: 1;
+  }
+  
+  .aboutfour_list h2 {
+    padding-left: 3rem;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .aboutfour_list ul {
+    padding-left: 5rem;
+    list-style-type: none;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .aboutfour_list li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Awards Section */
+  .awards-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+.aboutfour_left-section{
+    padding-left: 5rem;
+}
+
+  .aboutfour_center-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .aboutfour_center-section h3 {
+    font-size: 40px;
+    line-height: 1;
+    text-align: left;
+    padding-left: 15rem;
+  }
+  
+  .aboutfour_center-section button {
+    margin-left: 15rem;
+    margin-top: 10px;
+    background-color: #252422;
+    color: #f9cdcd;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid #f9cdcd;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .aboutfour_center-section button:hover {
+    background-color: #e3b3b3;
+    color: #252422;
+  }
+  
+  /* Bottom Section */
+  .aboutfour_bottom-section h1 {
+    font-size: 80px;
+    line-height: 1.5;
+    color: #f9cdcd;
+    text-align: left;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .capabilities-section,
+    .awards-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .aboutfour_lists-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .aboutfour_bottom-section h1 {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+  }
+  
+  /* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .capabilities-section,
+    .awards-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .aboutfour_lists-section {
+      flex-direction: column;
+      padding-left: 2rem;
+      gap: 20px;
+    }
+  
+    .aboutfour_list {
+      min-width: 100%; /* Ensure each list spans full width */
+    }
+  
+    .aboutfour_list h2 {
+      padding-left: 0;
+    }
+  
+    .aboutfour_list ul {
+      padding-left: 0;
+    }
+
+    .aboutfour_center-section h3 {
+      padding-left: 0;
+      text-align: left;
+    }
+  
+    .aboutfour_center-section button {
+      margin-left: 0;
+    }
+  
+    .aboutfour_bottom-section h1 {
+      font-size: 24px;
+      line-height: 1.8;
+    }
+  }

@@ -3,6 +3,7 @@ import AboutTop from './about/AboutTop';
 import AboutPhoto from './about/AboutPhoto';
 import AboutSecond from './about/AboutSecond';
 import AboutThird from './about/AboutThird';
+import AboutFour from './about/AboutFour';
 
 const About = () => {
   return (
@@ -11,6 +12,7 @@ const About = () => {
       <AboutPhoto/>
       <AboutSecond/>
       <AboutThird/>
+      <AboutFour/>
     </div>
   );
 }
