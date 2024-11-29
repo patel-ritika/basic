@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Work from './components/Work';
 import About from './components/About';
 import News from './components/News';
+import Think from './components/Think';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
   <Route path="/work" element={<Work />} />
   <Route path="/about" element={<About />} />
   <Route path="/news" element={<News />} />
+  <Route path="/thinking" element={<Think />} />
 </Routes>
 <Footer/>
 </BrowserRouter>

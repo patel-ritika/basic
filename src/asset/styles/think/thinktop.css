@@ -1,0 +1,104 @@
+.think-top-container {
+    background-color: #252422;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.think-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+.think-header h1 {
+    font-size: 100px;
+    margin: 0;
+    color: #f9cdcd;
+}
+
+.think-dot {
+    font-size: 200px;
+    line-height: 1;
+    color: #f9cdcd;
+}
+
+.think-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.think-section {
+    text-align: left;
+    max-width: 400px;
+}
+
+.think-section h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #f9cdcd;
+}
+
+.think-section h4 {
+    width: 520px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #f9cdcd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .think-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .think-header h1 {
+        font-size: 60px;
+    }
+
+    .think-dot {
+        font-size: 120px;
+    }
+
+    .think-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .think-section h3 {
+        padding-left: 2rem;
+        font-size: 30px;
+    }
+
+    .think-section h4 {
+        font-size: 18px;
+        text-align: left;
+        padding-left: 1rem;
+        width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .think-header h1 {
+        font-size: 40px;
+    }
+
+    .think-dot {
+        font-size: 80px;
+    }
+
+    .think-section h3 {
+        font-size: 24px;
+    }
+
+    .think-section h4 {
+        font-size: 16px;
+    }
+}
