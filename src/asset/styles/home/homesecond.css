@@ -1,70 +1,70 @@
 .homesecond-container {
-    margin-top: 10rem;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    padding: 20px;
-    gap: 20px; 
-  }
-  
-  .homesecond-item {
-    text-align: center; 
-  }
-  
-  .homesecond-image {
-    width: 350px;
-    cursor: pointer;
-    height: auto;
-    transition: transform 0.3s ease; 
-  }
-  
-  .homesecond-image:hover {
-    transform: scale(1.1); 
-  }
-  
-  .homesecond-heading {
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 35px;
-    position: relative; 
-    transition: color 0.3s ease; 
-  }
-  
-  .homesecond-heading:hover {
-    text-decoration: underline; 
-  }
-  
-  .homesecond-hr {
-    width: 90%; 
-    margin: 100px auto ;
-    border: none;
-    border-top: 2px solid black; 
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 20px;
+  gap: 20px; 
+}
+
+.homesecond-item {
+  text-align: center; 
+}
+
+.homesecond-image {
+  width: 350px;
+  cursor: pointer;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.homesecond-image:hover {
+  transform: scale(1.1); 
+}
+
+.homesecond-heading {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 35px;
+  position: relative; 
+  transition: color 0.3s ease; 
+}
+
+.homesecond-heading:hover {
+  text-decoration: underline; 
+}
+
+.homesecond-hr {
+  width: 90%; 
+  margin: 100px auto ;
+  border: none;
+  border-top: 2px solid black; 
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .homesecond-container {
+    margin-top: 1rem;
+    flex-direction: row; /* Items को Column में दिखाएं */
+    gap: 10px;
   }
 
-  /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .homesecond-container {
-      margin-top: 1rem;
-      flex-direction: row; /* Items को Column में दिखाएं */
-      gap: 10px;
-    }
-  
-    .homesecond-item {
-      flex: 1 1 100%; /* Full width on mobile */
-    }
-  
-    .homesecond-image {
-      max-width: 90%; /* Image को छोटा करें */
-      margin: 0 auto; /* सेंटर करें */
-    }
-  
-    .homesecond-heading {
-      font-size: 14px; /* Font size को छोटा करें */
-      margin-top: 10px;
-    }
-  
-    .homesecond-hr {
-      width: 80%; /* Line की Width कम करें */
-    }
+  .homesecond-item {
+    flex: 1 1 100%; /* Full width on mobile */
   }
+
+  .homesecond-image {
+    max-width: 90%; /* Image को छोटा करें */
+    margin: 0 auto; /* सेंटर करें */
+  }
+
+  .homesecond-heading {
+    font-size: 14px; /* Font size को छोटा करें */
+    margin-top: 10px;
+  }
+
+  .homesecond-hr {
+    width: 80%; /* Line की Width कम करें */
+  }
+}

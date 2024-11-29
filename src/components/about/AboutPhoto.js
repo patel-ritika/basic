@@ -5,6 +5,7 @@ import photoImage2 from '../../asset/images/about2.webp';
 import photoImage3 from '../../asset/images/about3.webp';
 import photoImage4 from '../../asset/images/about1.jpg';
 
+
 const AboutPhoto = () => {
   return (
     <div className="aboutphoto-container">
