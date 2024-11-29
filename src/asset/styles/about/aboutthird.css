@@ -1,0 +1,159 @@
+/* Full container style */
+.aboutthird-container {
+    background-color: #252422;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #f9cdcd;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  /* Left content styling */
+  .left-content {
+    flex: 1; /* Takes up remaining space */
+    padding-right: 20px;
+  }
+  
+  .left-content h2 {
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 5rem;
+  }
+  
+  /* Center content styling */
+  .center-content {
+    text-align: left;
+    flex: 2; /* Takes more space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .center-item {
+    padding-right: 5rem;
+    margin: 20px 0;
+  }
+  
+  .center-item h3 {
+    font-size: 24px;
+  }
+  
+  .center-item h1 {
+    font-size: 48px;
+  }
+  
+  .center-item h4 {
+    font-size: 16px;
+  }
+  
+  /* Right content styling */
+  .right-content {
+    flex: 1; /* Takes up remaining space */
+    padding-left: 20px;
+  }
+  
+  .right-item {
+    text-align: left;
+    width: 300px;
+    margin-bottom: 20px;
+    padding-right: 8rem;
+  }
+  
+  .right-item h3 {
+    margin-top: 3rem;
+    font-size: 24px;
+  }
+  
+  .right-item h1 {
+    font-size: 48px;
+  }
+  
+  .right-item h4 {
+    font-size: 16px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Stack items vertically on mobile */
+    .aboutthird-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .left-content, .center-content, .right-content {
+      padding: 10px;
+      width: 100%;
+    }
+  
+    /* Reduce font size on smaller screens */
+    .center-item h1, .right-item h1 {
+      font-size: 36px;
+    }
+  
+    .center-item h3, .right-item h3 {
+      font-size: 20px;
+    }
+  
+    .center-item h4, .right-item h4 {
+      font-size: 14px;
+    }
+  }
+  
+
+  /* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Stack items vertically on mobile */
+  .aboutthird-container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .left-content, .center-content, .right-content {
+      padding: 10px;
+      width: 100%;
+      text-align: center; /* Center align content */
+  }
+
+  .left-content h2 {
+      font-size: 32px;
+      padding-left: 0; /* Remove padding */
+  }
+
+  /* Center content adjustments */
+  .center-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+  }
+
+  .center-item {
+      padding-right: 0;
+      text-align: center;
+  }
+
+  .center-item h1, .right-item h1 {
+      font-size: 36px;
+  }
+
+  .center-item h3, .right-item h3 {
+      font-size: 20px;
+  }
+
+  .center-item h4, .right-item h4 {
+      font-size: 14px;
+      line-height: 1.4;
+  }
+
+  /* Right content adjustments */
+  .right-content {
+      padding-left: 0;
+  }
+
+  .right-item {
+      padding-right: 0;
+      text-align: center;
+      width: auto; /* Adjust width for mobile */
+  }
+}

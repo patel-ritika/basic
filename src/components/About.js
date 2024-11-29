@@ -2,6 +2,7 @@ import React from 'react';
 import AboutTop from './about/AboutTop';
 import AboutPhoto from './about/AboutPhoto';
 import AboutSecond from './about/AboutSecond';
+import AboutThird from './about/AboutThird';
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <AboutTop/>
       <AboutPhoto/>
       <AboutSecond/>
+      <AboutThird/>
     </div>
   );
 }
