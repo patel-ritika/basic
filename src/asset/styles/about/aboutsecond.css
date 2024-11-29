@@ -1,0 +1,79 @@
+/* पूरी कंटेनर के लिए */
+.aboutsecond-container {
+  background-color: #252422;
+  padding: 20px;
+  text-align: center;
+  color: #f9cdcd;
+}
+
+/* पहली और दूसरी लाइन के लिए */
+.line-container {
+  display: flex;
+  align-items: center; /* टेक्स्ट को लाइन के साथ वर्टिकल सेंटर में रखें */
+  justify-content: space-between; /* टेक्स्ट को बाईं, बीच, और दाईं ओर रखें */
+  margin: 10px 0;
+  position: relative;
+}
+
+/* पहली लाइन की लाइन के लिए */
+.horizontal-line {
+  border: none;
+  border-top: 2px solid #f9cdcd;
+  width: 100%; /* पूरी चौड़ाई में लाइन फैलाएं */
+  margin: 10px 0; /* थोड़ी जगह ऊपर-नीचे */
+}
+
+/* H1 के लिए */
+.main-text {
+  font-size: 70px;
+  padding-right: 40rem;
+  margin: 10px 0;
+  color: #f9cdcd;
+}
+
+/* दूसरी लाइन के लिए विशेष स्टाइल */
+.second-line {
+  width: 100%; /* लाइन की चौड़ाई पूरी रखें */
+  border: none;
+  border-top: 2px solid #f9cdcd; /* पिंक रंग की लाइन */
+  margin: 5px 0; /* थोड़ी जगह ऊपर-नीचे */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* H1 टेक्स्ट को छोटा और पूरी स्क्रीन में फिट करने के लिए */
+  .main-text {
+    font-size: 32px; /* मोबाइल स्क्रीन के लिए छोटा */
+    padding-right: 0; /* बड़े स्क्रीन के लिए extra padding हटाएं */
+  }
+
+  /* लाइन की चौड़ाई को कम करें */
+  .horizontal-line {
+    width: 90%; /* 90% तक चौड़ाई सीमित करें */
+  }
+
+  .second-line {
+    width: 90%; /* 90% तक चौड़ाई सीमित करें */
+  }
+
+  /* कंटेनर में थोड़ा सा padding */
+  .aboutsecond-container {
+    padding: 10px;
+  }
+
+  /* लाइन के कंटेनर को थोड़ी जगह दें */
+  .line-container {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* बहुत छोटे मोबाइल स्क्रीन के लिए */
+  .main-text {
+    font-size: 24px; /* छोटे मोबाइल के लिए और छोटा करें */
+  }
+
+  .horizontal-line, .second-line {
+    width: 95%; /* लाइन की चौड़ाई और कम करें */
+  }
+}
