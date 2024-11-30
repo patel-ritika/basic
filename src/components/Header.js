@@ -49,7 +49,12 @@ const Header = () => {
              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
              >CAREERS
              </NavLink></li>
-          <li className="nav-item">CONTACT</li>
+          <li className="nav-item">
+          <NavLink
+             to="/contact"
+             className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+             >CONTACT
+             </NavLink></li>
         </ul>
       </nav>
       <div className="menu-toggle" onClick={toggleMenu}>
